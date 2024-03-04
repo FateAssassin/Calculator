@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="center">
+        <div class="calculator">
+            <input type="text" readonly id="output"><br>
+            <table>
+                <!-- <tr>
+                    <button class="otherButton" onClick="addInput('sqrt')">√x</button>
+                    <button class="otherButton" onClick="addInput('')"></button>
+                    <button class="otherButton" onClick="addInput('%')">%</button>
+                    <button class="otherButton" onClick="addInput('^')">^</button>
+                </tr> -->
+                <tr><div class="breakLine"></div>
+                    <button class="numberButton" onClick="addInput(7)">7</button>
+                    <button class="numberButton" onClick="addInput(8)">8</button>
+                    <button class="numberButton" onClick="addInput(9)">9</button>
+                    <button class="otherButton" onClick="deleteInput()">Del</button>
+                </tr><br>
+                <tr><div class="breakLine"></div>
+                    <button class="numberButton" onClick="addInput(4)">4</button>
+                    <button class="numberButton" onClick="addInput(5)">5</button>
+                    <button class="numberButton" onClick="addInput(6)">6</button>
+                    <button class="otherButton" onClick="addInput('+')">+</button>
+                </tr><br>
+                <tr><div class="breakLine"></div>
+                    <button class="numberButton" onClick="addInput(1)">1</button>
+                    <button class="numberButton" onClick="addInput(2)">2</button>
+                    <button class="numberButton" onClick="addInput(3)">3</button>
+                    <button class="otherButton" onClick="addInput('-')">-</button>
+                </tr><br>
+                <tr><div class="breakLine"></div>
+                    <button class="otherButton" onClick="addInput('.')">.</button>
+                    <button class="numberButton" onClick="addInput(0)">0</button>
+                    <button class="otherButton" onClick="addInput('/')">÷</button>
+                    <button class="otherButton" onClick="addInput('*')">X</button>
+                </tr><br>
+                <tr><div class="breakLine"></div>
+                    <button class="bottomButton" onClick="clearInput()">&nbsp;&nbsp;&nbsp;<b>C</b>&nbsp;&nbsp;&nbsp;</button>
+                    <button class="bottomButton" id="enter" onClick="calculate()">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</button>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
